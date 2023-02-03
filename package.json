@@ -1,7 +1,8 @@
 {
   "name": "@davidrebollo92/currency-exchange",
-  "version": "0.1.0",
+  "version": "1.0.0",
   "description": "Convert currencies by entering the exchange rate with a precision of 6 decimal places",
+  "repository": "https://github.com/davidrebollo92/currency-exchange",
   "main": "dist/index.js",
   "umd:main": "dist/index.umd.js",
   "module": "dist/index.mjs",
@@ -26,5 +27,12 @@
   },
   "devDependencies": {
     "microbundle": "^0.15.1"
-  }
+  },
+  "files": [
+    "dist",
+    "src/index.d.ts",
+    "src/index.js.flow",
+    "package.json",
+    "README.md"
+  ]
 }
