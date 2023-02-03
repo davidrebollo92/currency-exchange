@@ -7,9 +7,21 @@ function convertCurrency(amount, rate) {
    amount = currency(amount, { fromCents: true });
    rate = currency(rate, { decimal: true, precision: 6 });
 
-   const amountConverted = amount.multiply(rate);
+   const amountConverted = amount.multiply(rate).intValue;
 
-   return amountConverted.intValue;
+   return amountConverted;
 }
 
-module.exports = convertCurrency;
+function getRate(from, to) {
+   if (typeof from != "number" || typeof to != "number")
+      throw new Error("The parameters entered must be of type number");
+
+   from = currency(from, { decimal: true, precision: 6 });
+   to = currency(to, { decimal: true, precision: 6 });
+
+   rate = to.divide(from).value;
+
+   return rate;
+}
+
+module.exports = { convertCurrency, getRate };
