@@ -9,7 +9,7 @@ npm i @davidrebollo92/currency-exchange
 ### Example
 
 ```js
-const { convertCurrency, getRates } = require("currency-exchange");
+const { convertCurrency, getRates } = require("@davidrebollo92/currency-exchange");
 
 const amountConverted = (5000, 3.940342);
 console.log(amountConverted);
