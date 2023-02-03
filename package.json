@@ -1,6 +1,6 @@
 {
   "name": "@davidrebollo92/currency-exchange",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Convert currencies by entering the exchange rate with a precision of 6 decimal places",
   "repository": "https://github.com/davidrebollo92/currency-exchange",
   "main": "dist/index.js",
