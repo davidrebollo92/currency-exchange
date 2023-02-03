@@ -1,12 +1,30 @@
 {
-  "name": "currency-exchange",
-  "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
+  "name": "@davidrebollo92/currency-exchange",
+  "version": "0.1.0",
+  "description": "Convert currencies by entering the exchange rate with a precision of 6 decimal places",
+  "main": "dist/index.js",
+  "umd:main": "dist/index.umd.js",
+  "module": "dist/index.mjs",
+  "source": "src/index.js",
   "scripts": {
+    "build": "microbundle",
+    "prepublish": "npm run build",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "keywords": [],
-  "author": "",
-  "license": "ISC"
+  "keywords": [
+    "convert",
+    "conversion",
+    "currency",
+    "money",
+    "precision",
+    "decimals"
+  ],
+  "author": "David Rebollo <dra992@gmail.com>",
+  "license": "MIT",
+  "dependencies": {
+    "currency.js": "^2.0.4"
+  },
+  "devDependencies": {
+    "microbundle": "^0.15.1"
+  }
 }
