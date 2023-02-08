@@ -8,7 +8,7 @@ npm i @davidrebollo92/currency-exchange
 
 ### Documentation
 
-Convert currencies by entering the exchange rate with a precision of 6 decimal places.
+Convert currencies by entering the exchange rate with a precision of 6 decimal places. It also allows you to get the exchange rate between two amounts. This package is supported by currency.js.
 
 The package consists of two functions:
 
